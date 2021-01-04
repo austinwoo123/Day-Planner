@@ -4,7 +4,7 @@ body {
   line-height: 1;
 }
 
-.col-10 {
+.textarea {
   background: transparent;
   border: none;
   resize: none;
@@ -23,7 +23,7 @@ body {
 
 .description{
   white-space: pre-wrap;
-  background-color: black;
+ 
 }
 
 .time-block{
