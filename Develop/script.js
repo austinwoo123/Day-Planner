@@ -13,6 +13,7 @@ var time5 = $("#17");
 var time = moment();
 
 function saveDay() {
+    // change the current time on the page //
     $("#currentDay").text(moment().format("dddd, MMMM Do YYYY"));
 
     $(".description").each(function () {
@@ -21,6 +22,7 @@ function saveDay() {
         var description = localStorage.getItem(id);
         console.log(description)
         if (description !== null) {
+            // putting it onto page from local storage //
             $(this).val(description);
         }
     });
@@ -30,14 +32,34 @@ saveDay();
 
 var saveBtn = $(".saveBtn");
 saveBtn.on("click", function () {
+    //retrieve id of parent //
     var time = $(this).parent().attr("id");
+    //retrive description from sibling of button //
     var description = $(this).siblings(".description").val()
     console.log(time)
     console.log(description)
+    // putting the description into local storage //
     localStorage.setItem(time, description);
-
-
 
 });
 
+function colorCode() {
+    hour = time.hours();
+    $(".description").each(function () {
+        var currentHour = parseInt($(this).attr("id"));
+
+        if (currentHour > hour) {
+            $(this).addClass("future")
+        }
+        else if (currentHour === hour) {
+            $(this).addClass("present");
+
+        }
+        else {
+            $(this).addClass("past");
+        }
+    })
+}
+
+colorCode();
 
