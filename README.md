@@ -1,1 +1,2 @@
 # Day-Planner
+Our assigment was to create a calendar application that allows a user to save events for each hour of the day that is color coded based on if the time is in the past, present, or future. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery. We needed to use Moment.js to work with dates andd times. When the user refreshes the page the evens should still be displayed on the page. 
