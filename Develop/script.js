@@ -42,7 +42,7 @@ saveBtn.on("click", function () {
     localStorage.setItem(time, description);
 
 });
-
+// function that adds a color attribute to each description in the of the time slots //
 function colorCode() {
     hour = time.hours();
     $(".description").each(function () {
