@@ -49,7 +49,7 @@ This code shows the basic structure of how I designed each of the time blocks in
 
 ## Deployed Link
 
-* [https://austinwoo123.github.io/Day-Planner/]
+* [https://austinwoo123.github.io/Day-Planner/Develop/index.html]
 
 ## Authors
 Austin Woo
